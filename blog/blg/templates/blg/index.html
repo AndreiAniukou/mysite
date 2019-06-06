@@ -1,0 +1,24 @@
+{% extends 'blg/base_blog.html' %} #Для того чтобы видеть наполнения
+
+    {% for name in names %}
+        <p>
+         {{ name }}
+        </p>
+    {% endfor %}
+
+
+
+    {% block title %}
+        Name Llists
+    {% endblock %}
+
+
+
+    {% block content %}
+        {% for name in names %}
+            <p>
+                 {{ name }}
+            </p>
+         {% endfor %}
+
+    {% endblock %}
